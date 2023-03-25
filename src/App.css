@@ -12,6 +12,7 @@ body {
 :root {
   --primary-color: #003145;
   --secondary-color: #44924c;
+  --font-color: #858585;
 }
 .banner {
   background: url("assets/waves.png"), var(--primary-color);
@@ -44,7 +45,7 @@ body {
 .whiteBtn {
   border: 2px solid rgb(146, 146, 146) !important;
   background-color: white !important;
-  color: grey !important;
+  color: var(--font-color) !important;
   width: 100%;
 }
 .post {
@@ -102,4 +103,34 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.imageUpload {
+  background-color: #f8f9fd;
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px dashed rgb(193, 193, 193);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 33px;
+  color: rgb(193, 193, 193);
+}
+@media only screen and (max-width: 600px) {
+  .banner {
+    padding: 5% 4%;
+  }
+  .formBox {
+    width: 100%;
+    padding: 5%;
+  }
+  .hackHeader {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hackHeader h1 {
+    margin: 2px !important;
+  }
 }

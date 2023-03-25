@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import { Link, Navigate, useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import {
   AiOutlineStar,
   AiFillStar,
@@ -108,9 +108,9 @@ function PostPage() {
             <p>{description}</p>
           </Col>
           <Col className="px-4">
-            <h6>Hackathon</h6>
+            <h6 style={{ color: "var(--font-color)" }}>Hackathon</h6>
             <h4>{hackathonName}</h4>
-            <p>
+            <p style={{ color: "var(--font-color)" }}>
               <AiTwotoneCalendar /> {moment(startDate).format(" Do MMM YYYY")} -{" "}
               {moment(endDate).format(" Do MMM YYYY")}
             </p>

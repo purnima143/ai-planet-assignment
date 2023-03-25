@@ -32,10 +32,10 @@ function Feed() {
     if (!posts) {
       localStorage.setItem("posts", JSON.stringify(hackData));
     }
-  }, [posts]);
+  }, []);
 
   useEffect(() => {
-    const data = tab === "favourite" ? favourite : posts;
+    const data = tab === "favourite" ? favourite : posts ? posts : hackData;
     setWhichTab(data);
   }, [tab]);
 

@@ -16,7 +16,13 @@ function Post({ post }) {
       <div>
         <p>{summary}</p>
       </div>
-      <div style={{ textAlign: "right" }}>
+      <div
+        style={{
+          textAlign: "right",
+          color: "var(--font-color)",
+          fontStyle: "italic",
+        }}
+      >
         <span>uploaded {moment(updateDate).startOf("day").fromNow()}</span>
       </div>
     </div>
