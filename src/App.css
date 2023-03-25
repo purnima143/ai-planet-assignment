@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: "Poppins", sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: #f8f9fd !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+:root {
+  --primary-color: #003145;
+  --secondary-color: #44924c;
+}
+.banner {
+  background: url("assets/waves.png"), var(--primary-color);
+  background-size: cover;
+  padding: 3% 100px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.btn {
+  background-color: var(--secondary-color) !important;
+  border: none !important;
+  padding: 14px 12px !important;
+  box-shadow: none !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.postImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.hackHeader,
+.postHeader {
+  display: flex;
+  align-items: center;
+}
+.blueBtn {
+  background-color: var(--primary-color) !important;
+  border: 1px solid white !important;
+  width: 100%;
+}
+.whiteBtn {
+  border: 2px solid rgb(146, 146, 146) !important;
+  background-color: white !important;
+  color: grey !important;
+  width: 100%;
+}
+.post {
+  border: 1px solid #e4e4e4;
+  box-shadow: 0px 3px 24px rgba(132, 132, 132, 0.16),
+    inset 0px -3px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  padding: 24px;
+  background-color: white;
+}
+.smallPostImg {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+#dropdown-basic {
+  background: white !important;
+  padding: 8px 21px !important;
+  border-radius: 20px;
+  color: black;
+  border: 1px solid black !important;
+}
+.tabBtn {
+  background: none !important;
+  color: black !important;
+  border-radius: 0% !important;
+  padding: 5px !important;
+  margin-right: 15px;
+}
+.formBox {
+  background-color: #ffffff;
+  width: 70%;
+  padding: 2%;
+  border-radius: 20px;
+  margin-top: 4%;
+}
+.dateBtn {
+  background-color: #255973 !important ;
+  border-radius: 30px !important;
+}
+.selectedTab {
+  border-bottom: 5px solid var(--secondary-color) !important;
+}
+.starBtn {
+  background: none !important;
+}
+.verticleLine {
+  width: 1px;
+  height: 40px;
+  margin: 0 6px;
+  background-color: #aaaaaa78;
+}
+.hackFooter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
